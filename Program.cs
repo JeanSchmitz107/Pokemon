@@ -16,22 +16,34 @@ class Program
 {
     static void Main(string[] args)
     {
-        Pokedex();
+        bool view_player = true, Pokédex = false;
+
+
+        string[] Pokémons = ["Pikachu", "Dracaufeu", "Tortank", "Florizarre", "Ectoplasma", "Ronflex"];
+        
+        while(view_player = true)
+        {
+            Console.WriteLine("Voullez vous regarder votre Pokédex ?");
+            if(Pokédex = true)
+            {
+                Pokedex(Pokémons);
+                Pokédex = false;
+            }
+        }
+        
+        
+        
     }
 
 
-    static void Pokedex()
+    static void Pokedex(string[] Pokémons)
     {
-        string[] Pokémon = ["Pikachu", "Dracaufeu", "Tortank", "Florizarre", "Ectoplasma", "Ronflex"];
+        Console.Write("\n");
 
-
-        Console.WriteLine("\n");
-
-        for (int i = 0; i <= 5; i++)
+        for (int i = 0; i < Pokémons.Length; i++)
         {
-            Console.WriteLine((i + 1) + " : " + Pokémon[i]);
-            Console.WriteLine("\n");
+            Console.WriteLine((i + 1) + " : " + Pokémons[i] + "\n");
         }
-        Console.WriteLine("Il y a " + Pokémon.Length + " Pokémon !");
+        Console.WriteLine("Il y a " + Pokémons.Length + " Pokémons !");
     }
 }
