@@ -21,15 +21,13 @@ class Program
 
         string[] Pokémons = ["Pikachu", "Dracaufeu", "Tortank", "Florizarre", "Ectoplasma", "Ronflex"];
         
-        while(view_player = true)
+        Console.WriteLine("Voullez vous regarder votre Pokédex ?");
+        if(Pokédex = true)
         {
-            Console.WriteLine("Voullez vous regarder votre Pokédex ?");
-            if(Pokédex = true)
-            {
-                Pokedex(Pokémons);
-                Pokédex = false;
-            }
+            Pokedex(Pokémons);
+            Pokédex = false;
         }
+        view_player = false;
         
         
         
